@@ -1,0 +1,21 @@
+# Mac system files
+.DS_Store
+
+# IDEs and Editors
+.vscode/
+.idea/
+*.swp
+
+# Language specific
+node_modules/
+__pycache__/
+.env
+dist/
+*.log
+data/DNN-EdgeIIoT-dataset.csv
+venv/
+.venv/
+env/
+data/*.csv
+data/
+output/
