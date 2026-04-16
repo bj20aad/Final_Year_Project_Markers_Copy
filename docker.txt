@@ -1,8 +1,13 @@
+Docker Install:
+
+https://www.docker.com/get-started/
+
 Setup Docker:
 
 docker run -it --rm \
-  --memory="3.8g" \
+  --memory="1.9g" \
   --cpus="4.0" \
+  --name fyp_2gb_sim \
   -v "$(pwd):/app" \
   -w /app \
-  python:3.9-slim
+  python:3.9-slim /bin/bash
