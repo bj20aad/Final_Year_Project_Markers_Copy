@@ -1,0 +1,16 @@
+(venv) benjoel@Bens-MacBook-Pro-7 fypCode % python /Users/benjoel/fypCode/scripts/04_evaluation/04_explain_anomalies.py
+Attack type : DDoS_ICMP
+  icmp.seq_le                         error: 712623040.0000
+  tcp.checksum                        error: 1.0000
+  tcp.flags.ack                       error: 1.0000
+
+Attack type : Password
+  tcp.ack_raw                         error: 0.1435
+  tcp.checksum                        error: 0.0957
+  tcp.flags.ack                       error: 0.0274
+
+Attack type : Port_Scanning
+  tcp.connection.syn                  error: 0.8964
+  tcp.flags.ack                       error: 0.6964
+  tcp.flags                           error: 0.3239
+
