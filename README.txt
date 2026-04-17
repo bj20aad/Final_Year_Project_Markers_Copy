@@ -87,7 +87,7 @@ A Variational Autoencoder (VAE) was developed, optimised via Bayesian hyperparam
     │   ├── 04_check_error.py              # Diagnose reconstruction error distribution
     │   ├── 04_error_analysis.py           # Breakdown of missed attacks by type
     │   ├── 04_explain_anomalies.py        # XAI feature attribution per attack sample
-    │   ├── 04_adversarial_test.py         # Gaussian noise robustness testing
+    │   ├── 04_adversarial_noise_test.py   # Gaussian noise robustness testing
     │   ├── 04_evaluation_visualised.py    # Generate Phase 3 figures (4.11–4.14)
     │   └── 04_terminal_output.txt         # Verified terminal output from XAI feature attribution
     │
