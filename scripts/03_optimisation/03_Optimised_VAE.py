@@ -11,6 +11,7 @@ BASE_DIR       = "/Users/benjoel/fypCode"
 TEST_FILE      = os.path.join(BASE_DIR, 'data', 'clean_mixed_test.csv')
 VAE_MODEL_PATH = os.path.join(BASE_DIR, 'output', 'vae_model.pth')
 SCALER_PATH    = os.path.join(BASE_DIR, 'output', 'scaler_vae.save')
+# Log-scale range of threshold to demonstrate precision-recall trade-off
 THRESHOLDS     = [0.001, 0.005, 0.01, 0.02, 0.05, 0.1, 0.2]
 
 
