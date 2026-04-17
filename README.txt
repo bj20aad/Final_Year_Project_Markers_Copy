@@ -69,16 +69,18 @@ A Variational Autoencoder (VAE) was developed, optimised via Bayesian hyperparam
     │   ├── 02_train_iforest.py            # Train Isolation Forest baseline
     │   ├── 02_train_vae.py                # Train baseline VAE (32x4)
     │   ├── 02_evaluate_baselines.py       # Evaluate all three baselines
-    │   └── 02_baseline_visuals.py         # Generate Phase 1 figures (4.1–4.4)
+    │   ├── 02_baseline_visuals.py         # Generate Phase 1 figures (4.1–4.4)
+    │   └── 02_terminal_output.txt         # Verified terminal output from baseline evaluation
     │
     ├── 03_optimisation/
     │   ├── 03_optimised_architecture.py   # Bayesian hyperparameter search (Optuna)
-    │   ├── 03_optimised_vae.py            # Train optimised VAE (64x8)
-    │   ├── 03_threshold_tune.py           # Threshold calibration search
+    │   ├── 03_failed_optimised_vae.py     # First training attempt — superseded, not used for results
+    │   ├── 03_Optimised_VAE.py            # Threshold calibration search (final version)
     │   ├── 03_evaluate_optimised.py       # Evaluate optimised VAE with confusion matrix
     │   ├── 03_check.py                    # Audit Optuna SQLite database
     │   ├── 03_optimisation_visualised.py  # Generate Phase 2 figures (4.5–4.10)
     │   ├── optimised_arch_diagram.py      # Generate Figure 3.1 (VAE topology)
+    │   ├── 03_terminal_output.txt         # Verified terminal output from threshold calibration
     │   └── optuna_study.db                # Persisted Optuna study (20 trials)
     │
     ├── 04_evaluation/
@@ -161,16 +163,19 @@ python scripts/02_Baseline_Models/02_train_vae.py
 python scripts/02_Baseline_Models/02_evaluate_baselines.py
 python scripts/02_Baseline_Models/02_baseline_visuals.py
 ```
+Reference output: `scripts/02_Baseline_Models/02_terminal_output.txt`
 
 ### 3. Optimise and evaluate the VAE
 ```bash
 python scripts/03_optimisation/03_optimised_architecture.py   # Bayesian search
-python scripts/03_optimisation/03_optimised_vae.py            # Train best config
-python scripts/03_optimisation/03_threshold_tune.py           # Find optimal threshold
+python scripts/03_optimisation/03_Optimised_VAE.py            # Threshold calibration
 python scripts/03_optimisation/03_evaluate_optimised.py       # Full evaluation
 python scripts/03_optimisation/03_optimisation_visualised.py  # Generate figures
 python scripts/03_optimisation/optimised_arch_diagram.py      # Architecture diagram
 ```
+Reference output: `scripts/03_optimisation/03_terminal_output.txt`
+
+Note: `03_failed_optimised_vae.py` is an earlier training attempt that was superseded and was not used to produce any results in the report.
 
 ### 4. Error analysis and XAI
 ```bash
