@@ -1,1 +1,48 @@
+benjoel@Bens-MacBook-Pro-7 ~ % cd /Users/benjoel/fypCode
+benjoel@Bens-MacBook-Pro-7 fypCode % source venv/bin/activate
+(venv) benjoel@Bens-MacBook-Pro-7 fypCode % python /Users/benjoel/fypCode/scripts/02_Baseline_Models/02_evaluate_baselines.py
+Loading test data...
+
+========================================
+[1/3] K-Means Baseline
+========================================
+/Users/benjoel/fypCode/venv/lib/python3.12/site-packages/sklearn/utils/validation.py:2691: UserWarning: X does not have valid feature names, but MinMaxScaler was fitted with feature names
+  warnings.warn(
+              precision    recall  f1-score   support
+
+  Normal (0)       0.81      1.00      0.89    323151
+  Attack (1)       1.00      0.37      0.54    120689
+
+    accuracy                           0.83    443840
+   macro avg       0.90      0.68      0.72    443840
+weighted avg       0.86      0.83      0.80    443840
+
+
+========================================
+[2/3] Isolation Forest Baseline
+========================================
+/Users/benjoel/fypCode/venv/lib/python3.12/site-packages/sklearn/utils/validation.py:2691: UserWarning: X does not have valid feature names, but MinMaxScaler was fitted with feature names
+  warnings.warn(
+              precision    recall  f1-score   support
+
+  Normal (0)       0.81      0.76      0.78    323151
+  Attack (1)       0.45      0.53      0.49    120689
+
+    accuracy                           0.70    443840
+   macro avg       0.63      0.64      0.64    443840
+weighted avg       0.71      0.70      0.70    443840
+
+
+========================================
+[3/3] Baseline VAE (32x4)
+========================================
+              precision    recall  f1-score   support
+
+  Normal (0)       0.82      0.69      0.75    323151
+  Attack (1)       0.42      0.60      0.49    120689
+
+    accuracy                           0.66    443840
+   macro avg       0.62      0.64      0.62    443840
+weighted avg       0.71      0.66      0.68    443840
+
 
