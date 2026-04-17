@@ -1,3 +1,4 @@
+#First attempt - not used for results in report
 import torch
 import torch.nn as nn
 import torch.optim as optim
