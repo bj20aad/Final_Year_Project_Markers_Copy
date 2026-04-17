@@ -1,0 +1,19 @@
+(venv) benjoel@Bens-MacBook-Pro-7 fypCode % python /Users/benjoel/fypCode/scripts/05_implementation/05_profile_system.py
+/Users/benjoel/fypCode/venv/lib/python3.12/site-packages/sklearn/utils/validation.py:2684: UserWarning: X has feature names, but MinMaxScaler was fitted without feature names
+  warnings.warn(
+Profiling inference across 1000 packets...
+
+Metric                    Value
+----------------------------------------
+Average latency           0.0297 ms
+P95 latency               0.0198 ms
+RAM consumption           170.80 MB
+(venv) benjoel@Bens-MacBook-Pro-7 fypCode % python /Users/benjoel/fypCode/scripts/05_implementation/05_quantize_torch.py
+Quantising output/vae_model.onnx to UINT8...
+WARNING:root:Please consider to run pre-processing before quantization. Refer to example: https://github.com/microsoft/onnxruntime-inference-examples/blob/main/quantization/image_classification/cpu/ReadMe.md 
+
+Original (FP32)           16.40 KB
+Quantised (UINT8)         11.57 KB
+Size reduction            29.4%
+
+Quantised model saved: output/vae_model_quant.onnx
