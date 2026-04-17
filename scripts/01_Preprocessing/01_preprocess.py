@@ -38,7 +38,7 @@ def preprocess_stream():
     reader = pd.read_csv(INPUT_FILE, chunksize=CHUNK_SIZE, low_memory=False)
 
     for i, chunk in enumerate(reader):
-        # Drop excluded columns where present
+        # Drop excluded columns where present in DROP_COLS array above
         chunk.drop(columns=[c for c in DROP_COLS if c in chunk.columns], inplace=True)
 
         # Retain only numeric features plus the label column
