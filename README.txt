@@ -88,13 +88,15 @@ A Variational Autoencoder (VAE) was developed, optimised via Bayesian hyperparam
     │   ├── 04_error_analysis.py           # Breakdown of missed attacks by type
     │   ├── 04_explain_anomalies.py        # XAI feature attribution per attack sample
     │   ├── 04_adversarial_test.py         # Gaussian noise robustness testing
-    │   └── 04_evaluation_visualised.py    # Generate Phase 3 figures (4.11–4.14)
+    │   ├── 04_evaluation_visualised.py    # Generate Phase 3 figures (4.11–4.14)
+    │   └── 04_terminal_output.txt         # Verified terminal output from XAI feature attribution
     │
     ├── 05_implementation/
     │   ├── 05_profile_system.py           # Edge latency and RAM profiling (ONNX)
     │   ├── 05_quantize_torch.py           # UINT8 dynamic quantisation
     │   ├── 05_train_cloud_model.py        # Cloud LSTM benchmark + Figure 4.15
-    │   └── 05_drift_lifecycle.py          # KS test drift detection pipeline
+    │   ├── 05_drift_lifecycle.py          # KS test drift detection pipeline
+    │   └── 05_terminal_output.txt         # Verified terminal output from edge profiling and quantisation
     │
     └── 06_futurework/
         └── 06_ensemble_learning.py        # Hybrid ensemble evaluation + Figure 4.16
@@ -185,6 +187,7 @@ python scripts/04_evaluation/04_explain_anomalies.py
 python scripts/04_evaluation/04_adversarial_test.py
 python scripts/04_evaluation/04_evaluation_visualised.py
 ```
+Reference output: `scripts/04_evaluation/04_terminal_output.txt`
 
 ### 5. Edge deployment profiling
 ```bash
@@ -193,6 +196,7 @@ python scripts/05_implementation/05_profile_system.py
 python scripts/05_implementation/05_train_cloud_model.py
 python scripts/05_implementation/05_drift_lifecycle.py
 ```
+Reference output: `scripts/05_implementation/05_terminal_output.txt`
 
 ### 6. Ensemble evaluation
 ```bash
