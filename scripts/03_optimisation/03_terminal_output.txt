@@ -1,7 +1,7 @@
 (venv) benjoel@Bens-MacBook-Pro-7 fypCode % python /Users/benjoel/fypCode/scripts/03_optimisation/03_threshold_tune.py
 Loading data and model...
 
-Searching for optimal classification threshold out of range
+Searching for optimal classification threshold...
 Threshold    F1         Accuracy  
 --------------------------------
 0.001        0.4276     0.2719    
