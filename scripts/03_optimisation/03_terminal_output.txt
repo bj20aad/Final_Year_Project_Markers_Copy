@@ -1,3 +1,5 @@
+NOTE: 03_threshold_tune.py renamed to 03_Optimised_VAE.py
+
 (venv) benjoel@Bens-MacBook-Pro-7 fypCode % python /Users/benjoel/fypCode/scripts/03_optimisation/03_threshold_tune.py
 Loading data and model...
 
